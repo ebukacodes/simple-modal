@@ -19,203 +19,180 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="webslides.css" />
-    <style>
-      * {
-        font-family: 'Varela Round', sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-     <main role="main">
-    <article id="webslides" class="horizontal">
-      <!-- Slide 1 -->
-      <section>
-        <span class="background" style="background-image:url('image.jpg')"></span>
+    <button id="myBtn">Open Modal</button>
 
-        <div class="wrap">
-          <h1><strong>Fayoon Bootcamp</strong></h1>
-          <br>
-          <p class="text-intro">
-            Become a Full Stack Developer in 3 months
-          </p>
-          <p>
-            <a href="#" class="button zoomIn">
-              Download Our Brochure
-            </a>
-          </p>
-        </div>
-      </section>
-      <!-- Slide 2 -->
-      <section>
-        <div class="wrap size-50 aligncenter">
-          <h2><strong>Why Fayoon?</strong></h2>
-          <div class="bg-white shadow">
-            <ul class="flexblock reasons">
-              <li>
-                <h2>Latest & best technologies</h2>
-                <p>You learn the latest and best web technologies</p>
-              </li>
-              <li>
-                <h2>Learn in a simple way</h2>
-                <p>You learn in the simplest way</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 3 -->
-      <section>
-        <div class="wrap">
-          <div class="grid vertical-align">
-            <div class="column">
-              <h3><strong>Full Stack Web Development</strong></h3>
-              <p class="text-intro">
-                We teach you Web Development front to back
-              </p>
-              <p>
-                We start with front end HTML/CSS/JS, teach you the React
-									framework and then move to the back-end with Node.js &
-									Express.
-              </p>
-            </div>
-            <div class="column">
-              <img src="https://i.ibb.co/cXCDCXL/tech.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 4 -->
-      <section>
-        <div class="wrap">
-          <h2>Our Curriculum</h2>
-          <ul class="flexblock features">
-            <li>
-              <div>
-                <h2>HTML / CSS</h2>
-                <img style="margin: 1rem;" src="https://i.ibb.co/4ZYPHtC/cur1.png" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>Front-End Programming</h2>
-                <img style="margin: 1rem;" src="https://i.ibb.co/tMjGkzf/cur2.png" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2>Back-End Programming</h2>
-                <img style="margin: 1rem;" src="https://i.ibb.co/N6h5CdF/cur3.png" alt="">
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Slide 5 -->
-      <section>
-        <div class="wrap">
-          <h2><strong>Bootcamp Projects</strong></h2>
-          <p>What we build</p>
-          <ul class="flexblock gallery">
-            <li>
-              <a href="#">
-                <figure>
-                  <img style="height: 20rem ;" src="https://i.ibb.co/RQdjB6d/project1.png" alt="">
-                  <figcaption>
-                    <h2>Project 1</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <figure>
-                  <img src="https://i.ibb.co/f4rdcVY/project2.png" alt="">
-                  <figcaption>
-                    <h2>Project 2</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <figure>
-                  <img src="https://i.ibb.co/qn28TPy/project3.png" alt="">
-                  <figcaption>
-                    <h2>Project 3</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <figure>
-                  <img src="https://i.ibb.co/R4yMq1m/project4.png" alt="">
-                  <figcaption>
-                    <h2>Project 4</h2>
-                  </figcaption>
-                </figure>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Slide 6 -->
-      <section>
-        <div class="wrap">
-          <h2><strong>More Info</strong></h2>
-          <p>Find out more</p>
-          <div class="grid vertical-align">
-            <div class="column">
-              <h4><strong>Instructors</strong></h4>
-              <p>We have some of the best programming instructors in the world working with us</p>
-              <ul class="description">
-                <li><a href="#">Destiny Innocent</a></li>
-                <li><a href="#">Ebuka Akara</a></li>
-              </ul>
-            </div>
-            <div class="column">
-              <h4><strong>Pricing Info</strong></h4>
-              <p>Click below to find more about pricing and the different
-                programs that we offer</p>
-              <ul class="description">
-                <li><a href="#">60 Day Program</a></li>
-                <li><a href="#">90 Day Program</a></li>
-              </ul>
-            </div>
-         
-          </div>
-        </div>
-      </section>
-
-    <!-- Slide 7 -->
-    <section class="aligncenter">
-      <div class="wrap">
-        <h2><strong>Are You Ready?</strong></h2>
-        <p class="text-intro">
-          Are you ready to become a fullstack web developer?
-        </p>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
         <p>
-          <a href="#" class="button">
-            Download Our Brochure
-          </a>
+          Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quas at architecto natus officiis modi
+          exercitationem minima amet officia et rerum. Rem
+          sapiente quia alias veritatis veniam magnam, quasi
+          adipisci nobis animi nulla deleniti eveniet, fugit
+          quis maiores, sunt soluta eum sit doloribus
+          deserunt iusto distinctio et. Provident quam
+          dolorem cum beatae at! Alias odit id voluptates
+          dolorum blanditiis molestiae nulla corrupti,
+          laborum repellendus deleniti ea cum atque ullam
+          illum tempora consequuntur voluptate deserunt quo
+          voluptas sed esse veniam mollitia a repellat?
+          Atque nam ipsam sequi, saepe nulla dolorum? Illum
+          repellat delectus nulla obcaecati laudantium.
+          Tempora enim consectetur, libero et eligendi
+          deserunt aperiam. Quis, quo. Quibusdam iusto
+          adipisci libero porro inventore unde voluptatum
+          assumenda, ullam, dolorum molestias magnam aperiam
+          voluptate facere consequatur dolore obcaecati
+          perspiciatis voluptatem. Aut excepturi libero nam
+          ipsam perferendis, rerum officia nemo voluptatem,
+          nostrum dolor esse natus ducimus iure alias?
+          Eveniet, repudiandae repellendus nesciunt sunt
+          eaque sapiente incidunt doloribus iure tenetur sed
+          corrupti perspiciatis, aliquid quam a ad, odio at
+          similique asperiores officiis! Esse earum ab fugit
+          aut cum atque est illo, qui quam mollitia eveniet
+          repudiandae hic debitis quod unde ducimus omnis
+          natus neque enim! Eligendi enim itaque quod
+          tempore sed, beatae iusto maxime modi dignissimos
+          iure cupiditate quas atque quasi esse repellendus
+          architecto rem ipsam ex vero? Laborum, similique
+          in deleniti molestiae ipsa amet magni facere
+          mollitia sequi, fugit tenetur ducimus aperiam
+          odit, dolore non! Labore, quisquam! Exercitationem
+          quidem ducimus est aspernatur eveniet, officiis
+          distinctio maiores odit ipsa, vitae eum! Maiores
+          sequi aliquam perspiciatis magnam temporibus hic
+          repellat expedita. Repudiandae dolor earum,
+          ratione maiores labore atque dolorem id iusto
+          debitis aspernatur perferendis? Deleniti, hic
+          illo? Quaerat amet nisi sed placeat error beatae.
+          Non necessitatibus laboriosam labore saepe nihil
+          consequuntur. Quod sint natus quos! Quidem
+          cupiditate vero fugiat beatae corporis! Ipsam, quo
+          ut. Vel adipisci est cupiditate voluptate sapiente
+          iusto culpa corrupti eligendi ex incidunt placeat,
+          praesentium voluptatibus consectetur, sunt
+          perspiciatis optio blanditiis aut nisi quam.
+          Veritatis vitae vero nulla porro, vel culpa
+          laudantium maiores doloribus error sapiente non
+          quam temporibus praesentium minus illo provident
+          dicta accusamus incidunt. Iste omnis blanditiis ex
+          nam voluptates temporibus vel debitis velit
+          ratione aut. Dolor nam iure soluta delectus! Sunt
+          possimus sapiente qui labore totam quaerat
+          voluptatum veniam, similique corrupti nulla, magni
+          itaque repudiandae, dolore expedita eum nesciunt
+          aliquid voluptas recusandae distinctio porro
+          reprehenderit accusantium hic maxime a.
+          Perferendis rerum reprehenderit repellat,
+          praesentium corrupti nulla incidunt harum optio
+          minima rem ex enim eveniet inventore? Doloremque,
+          delectus dolor quae obcaecati voluptate eligendi
+          minus repellendus ipsa! Quas saepe consequuntur
+          repellendus debitis possimus vitae quae,
+          voluptatibus doloribus modi unde tempora impedit
+          deleniti eum obcaecati, et, consequatur natus sunt
+          voluptate a id labore placeat officiis voluptatem
+          quod! Commodi dolore delectus quam animi deserunt
+          repellat fugit blanditiis iste totam, perferendis
+          ut quibusdam nobis accusamus voluptate dicta vel
+          itaque. Placeat molestias architecto sed iste
+          quisquam quam dolorum eaque libero, maiores, modi
+          fugiat tempora cum ipsam pariatur officiis ex
+          expedita. Nam soluta, eos id labore minus
+          adipisci, earum itaque inventore dignissimos
+          totam, animi iste velit illum mollitia cupiditate
+          voluptatibus laudantium molestias corporis harum
+          assumenda magni asperiores. Magni beatae ipsa
+          saepe nisi veritatis magnam repellendus, ducimus
+          harum. Eveniet, provident. Aliquid magnam numquam
+          optio adipisci? Deleniti optio provident porro
+          iure quod numquam vitae. Iusto cupiditate illum
+          qui esse incidunt ad asperiores earum cum tenetur?
+          Saepe, quae ut autem, ullam eos consequuntur
+          provident amet placeat accusantium maxime
+          doloribus inventore, distinctio repellat nemo
+          cumque aspernatur adipisci ratione blanditiis
+          debitis voluptas nulla? Iusto magnam qui odit
+          officia est porro possimus unde magni dolorum,
+          sequi adipisci distinctio autem cupiditate
+          aspernatur at. Rem voluptatem ipsum nihil veniam
+          in tempora debitis consequuntur nisi sint
+          suscipit! Sequi enim perspiciatis nesciunt
+          explicabo. Sed facilis laboriosam obcaecati fugiat
+          perferendis temporibus repellat quam, deserunt,
+          officia repudiandae in nihil praesentium
+          laudantium vitae accusantium sunt. Nobis obcaecati
+          minus, eum quibusdam ducimus itaque esse
+          necessitatibus totam molestias labore quisquam
+          commodi quod incidunt. Voluptas illum fugiat ipsa
+          perspiciatis cupiditate expedita dolor ducimus
+          voluptate consectetur atque at aliquid, porro
+          labore blanditiis pariatur, assumenda commodi.
+          Perferendis provident quod consectetur? Ipsa
+          mollitia eos sit iusto culpa quia voluptatibus
+          deleniti tenetur? Beatae doloremque corporis fuga
+          ut unde itaque iure maxime tenetur commodi
+          expedita explicabo ab reprehenderit, optio sint
+          voluptatem numquam ipsa earum quasi facere aut
+          tempore tempora. Possimus quisquam fuga nulla modi
+          laudantium at aspernatur dolore, repudiandae, ipsa
+          neque illum ea nesciunt earum unde repellendus
+          suscipit dicta ipsam expedita ab et? Sit dolorem,
+          repellat amet nulla eveniet, quis impedit
+          recusandae veniam suscipit reprehenderit dicta
+          numquam. Porro hic odio sequi? Quas beatae quod
+          consectetur consequatur maiores rerum deleniti,
+          eaque praesentium accusamus quaerat quae fugiat,
+          dicta nemo nam autem alias. Sunt officia laborum
+          modi in eius, ullam doloribus exercitationem alias
+          dolorum autem dignissimos saepe labore sed, nemo
+          sit? Dignissimos, unde non nobis nulla quam error.
+          Aspernatur expedita quia cumque vel, culpa
+          veritatis laudantium magnam voluptatum dicta
+          incidunt atque ab suscipit at fuga corrupti non
+          libero, earum aliquam error enim iure provident
+          neque. Vero labore esse voluptates fugit soluta
+          unde amet consectetur numquam, explicabo
+          doloremque accusamus illo dolor consequatur
+          deserunt odit? Illo at neque voluptas accusantium
+          suscipit, sunt maiores fugiat non repellat amet id
+          nobis veniam voluptatem sit quam, reiciendis,
+          vitae culpa corporis provident veritatis obcaecati
+          repellendus quis! Magnam, quibusdam ipsum? Vero
+          laborum aperiam nihil quibusdam ipsum deserunt,
+          sed eos suscipit placeat, numquam veniam unde rem
+          incidunt, dolorum iure quaerat itaque neque nulla
+          cumque. Animi modi hic magnam repudiandae quasi
+          fugit. Animi voluptatem numquam quae autem rem
+          ullam at, maxime quod labore sed vitae consectetur
+          iste explicabo nobis? Laborum quas maxime rerum ut
+          eaque voluptates accusamus velit. Perspiciatis,
+          deserunt eum excepturi, non repellendus amet
+          explicabo sapiente eius maxime architecto
+          molestiae eveniet numquam consequuntur iure ea
+          repudiandae dignissimos beatae necessitatibus
+          corporis esse. Ut nobis, molestiae error, modi nam
+          quae tenetur laborum cumque exercitationem neque
+          aspernatur repellat consequatur aliquid provident
+          blanditiis illo non repellendus illum id. Alias
+          corporis vitae omnis, autem eos enim nihil sed qui
+          perferendis quasi reprehenderit maxime eveniet
+          obcaecati aliquid? Saepe blanditiis delectus
+          veritatis, ex dolor cupiditate libero
+          necessitatibus illum natus obcaecati nemo
+          quibusdam pariatur iste corrupti nihil quam
+          numquam.
         </p>
       </div>
-    </section>
-
-    <!-- Slide 8 -->
-    
-    </article>
-  </main>
+    </div>
+    <script src="app.js"></script>
   </body>
-
-  <script src="webslides.js"></script>
-  <script>
-    window.ws = new WebSlides();
-  </script>
 </html>
